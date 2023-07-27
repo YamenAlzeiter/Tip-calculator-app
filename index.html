@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI<br>TTER</h1>
+  </header>
+  <main class="card">
+    <div class="calculater">
+
+      <div class="bill-container">
+        <div class="lable-container">
+          <label for="bill">Bill</label>
+          <p class="error-messge hidden">can't be zero</p>
+        </div>
+        <input name="bill" id="number" placeholder="0">
+      </div>
+
+      <div class="wrapper">
+        <p>Select Tip %</p>
+        <div class="tip-selector-grid">
+          <button class="btn-tip" value="5">5%</button>
+          <button class="btn-tip" value="10">10%</button>
+          <button class="btn-tip" value="15">15%</button>
+          <button class="btn-tip" value="25">25%</button>
+          <button class="btn-tip" value="50">50%</button>
+          <input type="text" name="custom" placeholder="Custom" id="custom">
+        </div>
+      </div>
+
+      <div class="people-count">
+        <div class="lable-container">
+          <label for="people">Number of People</label>
+          <p class="error-messge hidden">can't be zero</p>
+        </div>
+        <input type="text" name="people" id="number-of-people" placeholder="0">
+      </div>
+    </div>
+
+    <div class="output-section">
+      <div class="op">
+        <div class="output">
+          <p class="para">Tip Amount<br> <span>/ person</span></p>
+          <p class="tip-amount larg">$0.00</p>
+        </div>
+        <div class="output">
+          <p class="para">Total<br> <span>/ person</span></p>
+          <p class="tip-amount larg">$0.00</p>
+        </div>
+      </div>
+      <button class="btn-reset">RESET</button>
+    </div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
