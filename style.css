@@ -10,6 +10,16 @@
   --White: hsl(0, 0%, 100%);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -38,7 +48,6 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 1.7rem;
-  overflow: hidden;
   padding: 2rem;
   width: 57.5rem;
   gap: 1.7rem;
@@ -60,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .op {
@@ -91,10 +101,20 @@ label, p {
   font-size: 1.54rem;
   padding: .3rem 1.1rem;
   text-align: right;
+  
+  transition: outline ease-out .1s;
 }
 
 input:focus{
-    outline: 2px solid var(--Strong-cyan);
+  outline: 2px solid var(--Strong-cyan);
+}
+
+.error{
+  outline: 2px solid #cf7562;
+  transition: outline .1s;
+}
+.error:focus{
+outline: 2px solid #cf7562;
 }
 
 .tip-selector-grid {
@@ -174,9 +194,7 @@ br {
 .btn-tip:active {
     background-color: var(--Ligh-grayish-cyan);
 }
-.error{
-    outline: 2px solid #cf7562;
-}
+
 .hidden{
     display: none;
 }
