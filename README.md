@@ -1,4 +1,4 @@
-<img src=""></img>
+<img src="https://github.com/YamenAlzeiter/Tip-calculator-app/blob/master/design/desktop-preview.jpg?raw=true"></img>
 
 <h1 align="center">Product preview card component</h1>
 
@@ -37,4 +37,4 @@
 - I learned too much regarding javaScript, tryied to write more clean code and increased my understanding of HTML structure.
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my <a href="">solution</a>. It definitely helps to find new ways to code and find easier solutions! 
+A big thank you to anyone providing feedback on my <a href="https://www.frontendmentor.io/solutions/tip-calculator-app-using-html-css-and-javascript-JQEn60LUsT">solution</a>. It definitely helps to find new ways to code and find easier solutions! 
